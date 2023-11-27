@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="overall">
+      <section class="sidebar">
+        <div class="text-logo">
+          <img src="assets/images/odin-lined.png" alt="odin-logo" width="100" />
+          <h1 class="title">ODIN</h1>
+        </div>
+        <p class="copyright">
+          <span>Photo by</span>
+          <a href="https://unsplash.com/@haliewestphoto">Halie West</a>
+          <span>on</span>
+          <a href="https://unsplash.com/">Unsplash</a>
+        </p>
+      </section>
+      <section class="main-section">
+        <div class="container">
+          <div class="first">
+            <p class="text">
+              <strong
+                >This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                Sign up <em>now</em> to get started</strong
+              >
+            </p>
+            <p>
+              <strong>You <em>know</em> you want to.</strong>
+            </p>
+          </div>
+          <div class="second">
+            <form action="#" id="form">
+              <h2>Let's do this!</h2>
+              <div class="form-row">
+                <label for="first-name">first name</label>
+                <input type="text" id="first-name" name="usr_first_name" />
+              </div>
+              <div class="form-row">
+                <label for="last-name">last name</label>
+                <input type="text" id="last-name" name="usr_last_name" />
+              </div>
+              <div class="form-row">
+                <label for="email">email</label>
+                <input type="email" id="email-name" name="usr_email" required />
+              </div>
+              <div class="form-row">
+                <label for="phone-number">phone number</label>
+                <input type="tel" id="phone-number" name="usr_phone_number" />
+              </div>
+              <div class="form-row">
+                <label for="password">password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="usr_pwd"
+                  minlength="8"
+                  pattern="[A-Z]{1}[A-Za-z0-9]{8,}"
+                />
+              </div>
+              <div class="form-row">
+                <label for="password-confirm">confirm password</label>
+                <input type="password" id="password-confirm" />
+              </div>
+            </form>
+          </div>
+          <div class="third">
+            <button type="submit" form="form">Create Account</button>
+            <p>
+              <span> Already have an account? </span>
+              <a href="">Log In</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div></div>
+  </body>
+</html>
