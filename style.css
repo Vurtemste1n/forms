@@ -116,6 +116,9 @@ form h2 {
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   border: 1px solid blue;
 }
-.form-row input[type="password"]:invalid {
+.form-row input[type="password"][class="invalid"] {
   border: 2px solid red;
+}
+.form-row input[type="password"]:valid {
+  border: 2px solid green;
 }

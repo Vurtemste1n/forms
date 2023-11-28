@@ -59,13 +59,13 @@
                   type="password"
                   id="password"
                   name="usr_pwd"
-                  minlength="8"
                   pattern="[A-Z]{1}[A-Za-z0-9]{8,}"
+                  required
                 />
               </div>
-              <div class="form-row">
+              <div class="form-row error">
                 <label for="password-confirm">confirm password</label>
-                <input type="password" id="password-confirm" />
+                <input type="password" id="password-confirm" required />
               </div>
             </form>
           </div>
@@ -80,5 +80,6 @@
       </section>
     </div>
     <div></div>
+    <script src="script.js"></script>
   </body>
 </html>
